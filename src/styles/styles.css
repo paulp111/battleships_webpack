@@ -1,0 +1,91 @@
+body {
+  background: url('../images/sincerely-media-_4IGEPY0kZU-unsplash.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+
+h1 { 
+  color: #f2f3f4; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 50px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+p {
+  color: #f2f3f4;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0 0 12px;
+  text-align: center
+}
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+
+}
+
+#raster-container {
+  display: flex;
+  justify-content: space-around; 
+  margin: 0 auto; 
+}
+
+#spieler-raster, #computer-raster {
+  display: grid;
+  grid-template-columns: repeat(10, 0fr);
+  grid-gap: 2px;
+  margin-top: 20px;
+  margin-right: 10px; 
+  margin-left: 10px; 
+}
+
+.zelle {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#spieler-raster .zelle {
+  background-color: #90ee90;
+}
+
+#computer-raster .zelle {
+  background-color: red;
+}
+
+.schiff {
+  background-color: black !important;
+}
+
+.schiffHidden {
+  background-color: red !important;
+}
+
+
+.hit {
+  background-color: yellow !important;
+}
+
+.miss {
+  background-color: #ffffff !important;
+}
